@@ -1,6 +1,6 @@
 /* 
 
-Задание на урок:
+Задание на урок 012:
 
 1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
 "Сколько фильмов вы уже посмотрели?"
@@ -24,7 +24,6 @@
 
 */
 
-
 const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 const personalMovieDB = {
@@ -35,14 +34,12 @@ const personalMovieDB = {
   privat: false
 };
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцените его?', ''),
-      c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцените его?', '');
+const answer1 = prompt('Один из последних просмотренных фильмов?', ''),
+      answer2 = prompt('На сколько оцените его?', ''),
+      answer3 = prompt('Один из последних просмотренных фильмов?', ''),
+      answer4 = prompt('На сколько оцените его?', '');
 
-
-
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+personalMovieDB.movies[answer1] = answer2;
+personalMovieDB.movies[answer3] = answer4;
 
 console.log(personalMovieDB);
